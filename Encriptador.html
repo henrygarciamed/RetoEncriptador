@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Challenge</title>
+    <link rel="stylesheet" href="Styles.css"> <!-- Enlace a tu archivo CSS -->
+</head>
+<body>
+    <header class="header">
+        <nav class="header__menu">
+            <img class="presentacion__imagen" src="./Imagenes/Logo.png" alt="Logo de Alura">          
+        </nav>
+    </header>
+    <main>
+        <section class="Presentacion_Contenido">
+            <div class="Ingreso_de_datos">
+                <label for="Ingreso_dato">Ingrese el texto aquí</label>
+                <textarea id="Ingreso_dato" rows="10" placeholder="Ingresa el texto aquí..."></textarea>
+            </div>  
+            <p class="Alerta">
+                <img src="./Imagenes/Exclamacion.png" alt="Alerta"> Solo letras minúsculas y sin acentos
+            </p>
+            <div class="Botones">
+                <button class="Botones_encripto" onclick="encriptar()">Encriptar</button>
+                <button class="Botones_encripto" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </section> 
+        <section class="logocats">
+            <div>
+                <img class="Logo_cat" src="./Imagenes/spycat.png" alt="Logo del Desencriptador">
+            </div>
+            <div class="Resultado_encriptado">
+                <textarea id="Mensaje_Desifrado" readonly placeholder="Ningún mensaje fue encontrado"></textarea>
+            </div>
+            <p class="Mensaje_Ingrese_texto">Ingresa el texto que deseas encriptar o desencriptar</p>
+            <button class="Boton_dencripto" onclick="copiarTexto()">Copiar</button>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Henry Garcia</p>
+    </footer>
+    <script src="Encripta.js"></script>
+</body>
+</html>
+
